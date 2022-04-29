@@ -1,38 +1,111 @@
 .App {
-  text-align: center;
+  font-family: sans-serif;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  height: 193px;
+  border: 1px solid #e5e5e5;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header-icon {
+  margin-left: 120px;
+
+  font-size: 100px;
+  color: #5c48d3;
+}
+h1 {
+  margin-left: 54px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 193px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* height: 700px; */
+}
+
+.main-container button {
+  color: #5c48d3;
+  width: 120px;
+  height: 69px;
+  margin: 25px;
+  border: 1px solid #908f8f;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-size: 36px;
+  font-weight: 400;
+}
+.all-off {
+  width: 290px !important;
+}
+.no-way,
+.go {
+  font-size: 48px;
+  height: 144px;
+  width: 248px;
+  text-align: center;
+  line-height: 144px;
+  border-radius: 6px;
+  border: 1px solid #908f8f;
+}
+.no-way {
+  background-color: #d34848;
+}
+.go {
+  background-color: #46ac4a;
+}
+.footer p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer span {
+  font-weight: bold;
+}
+
+@media (max-width: 650px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    height: 700px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .header {
+    height: 140px;
+    border: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+  }
+
+  .header-icon {
+    margin-left: 20px;
+
+    font-size: 50px;
+    color: #5c48d3;
+  }
+
+  h1 {
+    margin-left: 20px;
+    font-size: 30px;
+  }
+
+  .main-container button {
+    width: 110px;
+    height: 60px;
+    margin: 25px;
+  }
+
+  .all-off {
+    width: 270px !important;
   }
 }
